@@ -39,7 +39,7 @@ module.exports = {
       include: path.join(__dirname, "assets")
     }, {
       test: /\.png$/,
-      loader: "url-loader?mimetype=image/png",
+      loader: "url-loader?limit=8192&mimetype=image/png",
       include: path.join(__dirname, "assets")
     }, {
       test: /\.gif$/,
